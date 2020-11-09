@@ -1,3 +1,5 @@
+
+<%= render "users/header" %>
 <div class="contents row">
   <% @texts.each do |text| %>
     <div class="content_post" style="background-image: url(<%= text.image %>);">
@@ -7,8 +9,14 @@
       <p><%= text.place %></p>
       <p><%= text.transportation %></p>
       <p><%= text.freedom %></p>
-      
+      <%= image_tag text.image.variant(resize: '150x150'), class: 'text-image' if text.image.attached?%>
     </div>
-    <%= image_tag text.image, class: 'text-image' if text.image.attached?%>
+    <li>
+         <%= link_to '編集', edit_text_path(text.id), method: :get %>
+        </li>
+        <li>
+          <%= link_to '削除', text_path(text.id), method: :delete %>
+        </li>
   <% end %>
 </div>
+
