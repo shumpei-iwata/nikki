@@ -12,6 +12,21 @@ class TextsController < ApplicationController
     Text.create(text_params)
   end
 
+  def destroy
+    @text = Text.find(params[:id])
+    @text.destroy
+  end
+
+  def edit
+    @text = Text.find(params[:id])
+  end
+
+  def update
+    text = Text.find(params[:id])
+    text.update(text_params)
+  end
+
+
   private
   def text_params
     params.require(:text).permit(:day, :place, :transportation, :freedom,:image)
