@@ -5,9 +5,15 @@
       <%= form.text_field :day, placeholder: "" %>
       <%= form.text_field :transportation, placeholder: "交通手段" %>
       <%= form.text_field :place, placeholder: "金額" %>
-      <%= form.text_field :image, placeholder: "画像" %>
       <%= form.text_area :freedom, placeholder: "自由なスペース", rows: "10" %>
       <%= form.submit "SEND" %>
+      <div class="click-upload">
+        <p>
+          クリックしてファイルをアップロード
+        </p>
+        <%= form.file_field :image, id:"text-image" %>
+      </div>
+    </div>
     <% end %>
   </div>
 </div>
