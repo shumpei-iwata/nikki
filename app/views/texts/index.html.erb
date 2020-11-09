@@ -9,5 +9,6 @@
       <p><%= text.freedom %></p>
       
     </div>
+    <%= image_tag text.image, class: 'text-image' if text.image.attached?%>
   <% end %>
 </div>
