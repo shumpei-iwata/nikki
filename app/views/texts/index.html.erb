@@ -1,10 +1,13 @@
 <div class="contents row">
   <% @texts.each do |text| %>
     <div class="content_post" style="background-image: url(<%= text.image %>);">
-      <p><%= text.text %></p>
       <span class="day">
         <%= text.day %>
       </span>
+      <p><%= text.place %></p>
+      <p><%= text.transportation %></p>
+      <p><%= text.freedom %></p>
+      
     </div>
   <% end %>
 </div>
