@@ -1,7 +1,7 @@
 class TextsController < ApplicationController
 
   def index
-    @texts = Text.all
+    @texts = Text.all.order(id: "DESC")
   end
 
   def new

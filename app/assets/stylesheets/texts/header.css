@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.header {
+  width: 100vw;
+  padding: 5vh 15vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+
+.grid-6 {
+  width: 65vw;
+  height: 5vh;
+  margin-bottom: 10px;
+  display: block;
+  
+}
+.user_nav {
+  width: 65vw;
+  height: 5vh;
+  margin-bottom: 10px;
+  display: block;
+  
+}
+
+
