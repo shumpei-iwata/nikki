@@ -1,15 +1,20 @@
 * {
   box-sizing: border-box;
   text-align: center;
+  background: rgb(246, 249, 250);
+  border: 1px solid rgb(80, 90, 95);
+  color: #202020;
 }
 
 .header {
-  width: 100vw;
+  width: 96vw;
   padding: 5vh 15vw;
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 30px;
+  font-size: 27px;
+  background: #a1d6f0;
+  color: rgb(242, 243, 250);
 }
 
 
@@ -19,6 +24,10 @@
   height: 5vh;
   margin-bottom: 10px;
   display: block;
+  background: #bae1f5;
+  color: rgb(242, 243, 250);
+  
+
   
 }
 .user_nav {
@@ -26,7 +35,7 @@
   height: 5vh;
   margin-bottom: 10px;
   display: block;
-  
+
 }
 
 
