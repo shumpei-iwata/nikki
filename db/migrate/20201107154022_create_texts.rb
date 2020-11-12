@@ -3,7 +3,7 @@ class CreateTexts < ActiveRecord::Migration[6.0]
     create_table :texts do |t|
       t.string :day
       t.string :place
-      t.string :transportation
+      t.string :classname
       t.string :freedom
       t.text   :image
       t.timestamps

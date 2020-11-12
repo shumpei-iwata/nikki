@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 2020_11_09_062617) do
   create_table "texts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "day"
     t.string "place"
-    t.string "transportation"
+    t.string "classname"
     t.string "freedom"
     t.text "image"
     t.datetime "created_at", precision: 6, null: false

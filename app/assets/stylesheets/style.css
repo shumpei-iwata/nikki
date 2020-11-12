@@ -1,7 +1,7 @@
 .contents row {
   display: flex;
   text-align: center;
-  
+  justify-content: space-between;
   
 }
 
@@ -10,6 +10,7 @@
   width: 500px;
   height: 50vh;
   margin: 0 450px;
+  position: relative;
  
   
  
@@ -39,11 +40,7 @@
   
 }
 
-.p{
 
-  text-align:center;
-
-}
 
 
   
