@@ -29,7 +29,7 @@ class TextsController < ApplicationController
 
   private
   def text_params
-    params.require(:text).permit(:day, :place, :transportation, :freedom, :image)
+    params.require(:text).permit(:day, :place, :classname, :freedom, :image)
   end
 
 end

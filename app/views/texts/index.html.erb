@@ -9,9 +9,8 @@
       </span>
       <div class= "textmap">
       <p><%= text.place %></p>
-      <p><%= text.transportation %></p>
+      <p><%= text.classname %></p>
       <p><%= text.freedom %></p>
-          
       <%= image_tag text.image.variant(resize: '150x150'), class: 'text-image' if text.image.attached?%>
       </div>
     </div>
@@ -22,7 +21,7 @@
         <li>
           <%= link_to '削除', text_path(text.id), method: :delete %>
         </li>
-        
+    
    </div>
   <% end %>
 </div>
