@@ -22,8 +22,9 @@ class TextsController < ApplicationController
   end
 
   def update
-    text = Text.find(params[:id])
-    text.update(text_params)
+    @text = Text.find(params[:id])
+    @text.update(text_params)
+    redirect_to texts_path
   end
 
 

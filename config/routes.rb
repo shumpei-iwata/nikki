@@ -4,6 +4,6 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
   root to: 'texts#index'
-  resources :texts 
+  resources :texts
     resources :users
 end

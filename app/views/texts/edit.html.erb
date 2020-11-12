@@ -3,7 +3,7 @@
     <h3>編集する</h3>
     <%= form_with(model: @text, local: true) do |form| %>
       <%= form.text_field :day, placeholder: "日時" %>
-      <%= form.text_field :classname, placeholder: "階級 名前" %>
+      <%= form.text_field :classname, placeholder: "" %>
       <%= form.text_field :place, placeholder: "場所" %>
       <%= form.text_area :freedom, placeholder: "内容", rows: "10" %>
       <%= form.submit "保存", id: "submit" %>

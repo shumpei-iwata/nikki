@@ -3,19 +3,15 @@
   text-align: center;
   justify-content: space-between;
   
+  
 }
 
 .content_post {
   background-color: #e2e9d3;
-  width: 500px;
+  width: 600px;
   height: 50vh;
-  margin: 0 450px;
+  margin: 0 420px;
   position: relative;
- 
-  
- 
-
-  
 
 }
 .day {
@@ -25,9 +21,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  
-
 
 }
 
