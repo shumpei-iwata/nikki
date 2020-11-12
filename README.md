@@ -19,7 +19,7 @@
 | Column          | Type       | Options             |
 | -------------   | ---------- | --------------------|
 | day             | string     |                     |
-| transportation  | string     |                     |
+| clacename       | string     |                     |
 | price           | string     |                     |
 | freedom         | string     |                     |
 | image           | string     |                     |
