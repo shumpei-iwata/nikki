@@ -26,7 +26,7 @@
 | user_id         | integer    | foreign_key: true, null:false|
 
 
-アプリケーション名	
+## アプリケーション名	
 nikki
 
 テスト用アカウント	
@@ -38,7 +38,7 @@ password:atama419
 ユーザー管理機能
 https://i.gyazo.com/efc370735d4a777edffdcd46d1d3f544.gif
 
-テキスト投稿機能
+画像とテキスト投稿機能 
 https://i.gyazo.com/7aebaa5fb42f6e4edf7af0fa70360890.gif
 
 sns認証機能
@@ -51,11 +51,8 @@ https://i.gyazo.com/9cb90e4c9aa7b84128e2f957b51b98bb.gif
 目指した課題解決
 前職で情報の共有ということをあまり行いませんでした。個人で片付けてくださいという風潮が根付いていたからです。
 いざ共有しようとすると、全て紙で行っていたため、とても効率が悪かったです。
-この課題を解決するた目には、簡単かつ気軽に情報を共有できるシステムが必要だと思いました。
-
-
+この課題を解決するためには、簡単かつ気軽に情報を共有できるシステムが必要だと思いました。
 ローカルでの動作方法	
-。
-
+gh repo clone shumpei-iwata/nikki
 
 
