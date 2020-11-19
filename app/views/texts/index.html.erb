@@ -1,21 +1,39 @@
-<div class="contents row">
+
+<%= render "users/header" %>
+<div class="contents_row">
   <% @texts.each do |text| %>
+   <div class= "text-date">
     <div class="content_post" style="background-image: url(<%= text.image %>);">
       <span class="day">
         <%= text.day %>
       </span>
+      <div class= "textmap">
       <p><%= text.place %></p>
-<<<<<<< Updated upstream
+
       <p><%= text.transportation %></p>
       <p><%= text.freedom %></p>
       
-=======
+
       <p><%= text.classname %></p>
          <%= text.freedom %>
       </div>
       <%= image_tag text.image.variant(resize: '500x500'), class: 'text-image' if text.image.attached?%> 
->>>>>>> Stashed changes
+
+      <p><%= text.classname %></p>
+         <%= text.freedom %>
+      </div>
+      <%= image_tag text.image.variant(resize: '150x150'), class: 'text-image' if text.image.attached?%> 
+
     </div>
-    <%= image_tag text.image, class: 'text-image' if text.image.attached?%>
+  </div>
+    <li>
+         <%= link_to '編集', edit_text_path(text.id), method: :get %>
+        </li>
+        <li>
+          <%= link_to '削除', text_path(text.id), method: :delete %>
+        </li>
+    
+   </div>
   <% end %>
 </div>
+

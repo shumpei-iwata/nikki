@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+  background: rgb(246, 249, 250);
+  border: 1px solid rgb(155, 157, 158);
+  color: #202020;
+}
+
+.header {
+  width: 96vw;
+  padding: 5vh 15vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 27px;
+  background: #a1d6f0;
+  color: rgb(242, 243, 250);
+}
+
+
+
+.grid-6 {
+  width: 65.5vw;
+  height: 5vh;
+  margin-bottom: 10px;
+  display: block;
+  background: #bae1f5;
+  color: rgb(242, 243, 250);
+  
+
+  
+}
+.user_nav {
+  width: 65.5vw;
+  height: 5vh;
+  margin-bottom: 10px;
+  display: block;
+
+}
+
+

@@ -1,0 +1,22 @@
+.contents row {
+  display: flex;
+  text-align: center;
+  background-color: #e0eec2;
+}
+
+.container {
+  background-color: #e0eec2;
+  width: 330px;
+  height: 60vh;
+  margin: 0 500px;
+  text-align: center;
+}
+.click-upload {
+  height: 100px;
+  padding: 0 10px;
+  background-color: #ecf5d2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}

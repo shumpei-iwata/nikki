@@ -1,7 +1,7 @@
 class TextsController < ApplicationController
 
   def index
-    @texts = Text.all
+    @texts = Text.all.order(id: "DESC")
   end
 
   def new
@@ -12,9 +12,25 @@ class TextsController < ApplicationController
     Text.create(text_params)
   end
 
+  def destroy
+    @text = Text.find(params[:id])
+    @text.destroy
+  end
+
+  def edit
+    @text = Text.find(params[:id])
+  end
+
+  def update
+    @text = Text.find(params[:id])
+    @text.update(text_params)
+    redirect_to texts_path
+  end
+
+
   private
   def text_params
-    params.require(:text).permit(:day, :place, :transportation, :freedom,:image)
+    params.require(:text).permit(:day, :place, :classname, :freedom, :image)
   end
 
 end

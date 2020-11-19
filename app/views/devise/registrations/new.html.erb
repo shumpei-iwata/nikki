@@ -1,0 +1,52 @@
+<h2>新規登録</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+<div class="field">
+   <%= f.label :ニックネーム %><br />
+   <%= f.text_field :nickname, autofocus: true %>
+ </div>
+
+ <div class="field">
+   <%= f.label :名字 %><br />
+   <%= f.text_field :lastname %>
+ </div>
+
+ <div class="field">
+   <%= f.label :名前 %><br />
+   <%= f.text_field :firstname %>
+ </div>
+
+ <div class="field">
+   <%= f.label :誕生日 %><br />
+   <%= f.date_select :birthday, start_year: 1950, end_year: 2019 %>
+ </div>
+
+  <div class="field">
+    <%= f.label :メールアドレス %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+ <%if @sns_id.present? %>
+   <%= hidden_field_tag :sns_auth, true %>
+ <% else %>
+  <div class="field">
+    <%= f.label :パスワード %>
+    <%  @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <br />
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :パスワード２回目 %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+ <% end %>
+  <div class="actions">
+    <%= f.submit "新規登録" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>

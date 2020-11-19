@@ -1,5 +1,4 @@
-<<<<<<< Updated upstream
-=======
+
 .contents row {
   display: flex;
   text-align: center;
@@ -11,13 +10,19 @@
 .content_post {
   background-color: #e2e9d3;
   width: 600px;
+
   height: 75vh;
+  height: 50vh;
+
   margin: 0 420px;
   position: relative;
 
 }
 .day {
   height: 30px;
+
+  height: 50px;
+
   padding: 0 200px;
   background-color: #ddeeae;
   display: flex;
@@ -36,10 +41,3 @@
 }
 
 
-
-
-  
-  
-
-
->>>>>>> Stashed changes
