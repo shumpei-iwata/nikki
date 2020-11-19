@@ -3,6 +3,9 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :omniauthable, omniauth_providers: [:google_oauth2]
+  validates :nickname, presence: true
+  validates :lastname, presence: true
+  validates :firstname, presence: true
   has_many :sns_credentials
   has_many :text
   def self.from_omniauth(auth)
