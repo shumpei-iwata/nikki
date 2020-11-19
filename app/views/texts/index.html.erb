@@ -9,10 +9,21 @@
       </span>
       <div class= "textmap">
       <p><%= text.place %></p>
+
+      <p><%= text.transportation %></p>
+      <p><%= text.freedom %></p>
+      
+
+      <p><%= text.classname %></p>
+         <%= text.freedom %>
+      </div>
+      <%= image_tag text.image.variant(resize: '500x500'), class: 'text-image' if text.image.attached?%> 
+
       <p><%= text.classname %></p>
          <%= text.freedom %>
       </div>
       <%= image_tag text.image.variant(resize: '150x150'), class: 'text-image' if text.image.attached?%> 
+
     </div>
   </div>
     <li>
