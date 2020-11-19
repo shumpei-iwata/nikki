@@ -5,9 +5,16 @@
         <%= text.day %>
       </span>
       <p><%= text.place %></p>
+<<<<<<< Updated upstream
       <p><%= text.transportation %></p>
       <p><%= text.freedom %></p>
       
+=======
+      <p><%= text.classname %></p>
+         <%= text.freedom %>
+      </div>
+      <%= image_tag text.image.variant(resize: '500x500'), class: 'text-image' if text.image.attached?%> 
+>>>>>>> Stashed changes
     </div>
     <%= image_tag text.image, class: 'text-image' if text.image.attached?%>
   <% end %>
